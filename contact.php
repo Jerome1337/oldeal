@@ -35,11 +35,11 @@
 
 //include ('config.php');
 
-if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['email']) && isset($_POST['message']))
+if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['telephone']) && isset($_POST['message']))
 {
 	extract($_POST);
 
-	if (!empty($lastName) && !empty($firstName) && !empty($email) && !empty($message))
+	if (!empty($lastName) && !empty($email) && !empty($telephone) && !empty($message))
 	{
 		if (preg_match("#^[a-zA-Z0-9._-]+@(yahoo|gmail|hotmail|live|msn|aol).[a-z]{2,4}$#",$email))
 		{
