@@ -34,22 +34,12 @@
 <?php
 
 //include ('config.php');
-<<<<<<< HEAD
-echo($_POST);
-
-if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['email']) && isset($_POST['message']))
-{
-	extract($_POST);
-
-	if (!empty($lastName) && !empty($firstName) && !empty($email) && !empty($message))
-=======
 
 if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['telephone']) && isset($_POST['message']))
 {
 	extract($_POST);
 
 	if (!empty($lastName) && !empty($email) && !empty($telephone) && !empty($message))
->>>>>>> origin/master
 	{
 		if (preg_match("#^[a-zA-Z0-9._-]+@(yahoo|gmail|hotmail|live|msn|aol).[a-z]{2,4}$#",$email))
 		{
@@ -99,15 +89,7 @@ if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['email']) && isset
 
 ?>
 
-<<<<<<< HEAD
 		<section class="formContact">
-=======
-<<<<<<< HEAD
-		<section class="formContact">
-=======
-		<section>
->>>>>>> origin/master
->>>>>>> 381cae02b0417e9544bfabe108b16d0bdb51926e
 			<div class="row">
 				<div class="small-12">
 					<h2>Contact</h2>
@@ -116,11 +98,9 @@ if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['email']) && isset
 					       Vous souhaitez être recontacté par nos conseillers ou recevoir notre brochure ?<br>
 						   N'hesitez pas à nous contacter !</p>
 
-<<<<<<< HEAD
+
 						<form action="contact.php" name="formSaisie" method="POST" enctype="multipart/form-data" >
-=======
-						<form action="contact.php" name="formSaisie" method="POST" enctype="multipart/form-data" onsubmit="return valider()">
->>>>>>> origin/master
+
 							
 								<input type="text" name="lastName" id ="lastName" value="" placeholder="Votre nom" onblur="verifLastName(this)">
 
