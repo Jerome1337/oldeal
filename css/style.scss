@@ -91,10 +91,28 @@ section.sectionMoreInfo{
   h4,p{color: $white;}
 }
 
-@media screen and (max-width: 640px) {
-  body {
-    background: red;
-    display:block;
-    clear:both;
+
+/************* CONTACT *************/
+
+section.formContact{
+    margin-left: 50px;
+  h2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  p{
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  form{
+    input:nth-child(-n+3){
+      width:300px !important;
+    }
+    textarea{
+      width: 500px;
+    }
+    input:nth-child(n+4){
+      margin-left: 380px;
+    }
   }
 }
