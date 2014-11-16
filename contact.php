@@ -89,7 +89,7 @@ if(isset($_POST) && isset($_POST['lastName']) && isset($_POST['email']) && isset
 
 ?>
 
-		<section>
+		<section class="formContact">
 			<div class="row">
 				<div class="small-12">
 					<h2>Contact</h2>
