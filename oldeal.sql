@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
+-- version 4.1.4
 -- http://www.phpmyadmin.net
 --
--- Client: localhost
--- Généré le: Jeu 13 Novembre 2014 à 10:30
--- Version du serveur: 5.6.12-log
--- Version de PHP: 5.4.16
+-- Client :  127.0.0.1
+-- Généré le :  Dim 16 Novembre 2014 à 15:35
+-- Version du serveur :  5.6.15-log
+-- Version de PHP :  5.5.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,10 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `oldeal`
+-- Base de données :  `oldeal`
 --
-CREATE DATABASE IF NOT EXISTS `oldeal` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `oldeal`;
 
 -- --------------------------------------------------------
 
@@ -30,12 +28,19 @@ USE `oldeal`;
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `firstName` tinytext NOT NULL,
   `lastName` tinytext NOT NULL,
   `email` varchar(100) NOT NULL,
+  `telephone` text NOT NULL,
   `message` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+
+--
+-- Contenu de la table `user`
+--
+
+INSERT INTO `user` (`id`, `lastName`, `email`, `telephone`, `message`) VALUES
+(27, 'fgbdfg', 'natthan2b4@hotmail.fr', '', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
