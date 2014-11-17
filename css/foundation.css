@@ -7718,22 +7718,11 @@ section.sectionMoreInfo h4, section.sectionMoreInfo p {
 }
 
 section.formContact {
-  margin-left: 50px;
+  margin-top: 30px;
 }
-section.formContact h2 {
-  margin-top: 60px;
-  margin-bottom: 30px;
+section.formContact .alertZone {
+  min-height: 50px;
 }
-section.formContact p {
-  line-height: 30px;
-  margin-bottom: 30px;
-}
-section.formContact form input:nth-child(-n+3) {
-  width: 300px !important;
-}
-section.formContact form textarea {
-  width: 500px;
-}
-section.formContact form input:nth-child(n+4) {
-  margin-left: 380px;
+section.formContact .alert-box {
+  display: none;
 }

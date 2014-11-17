@@ -92,24 +92,11 @@ section.sectionMoreInfo{
 }
 
 section.formContact{
-    margin-left: 50px;
-  h2{
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+  .alertZone{
+    min-height: 50px;
   }
-  p{
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-  form{
-    input:nth-child(-n+3){
-      width:300px !important;
-    }
-    textarea{
-      width: 500px;
-    }
-    input:nth-child(n+4){
-      margin-left: 380px;
-    }
+  .alert-box{
+    display: none;
   }
 }
